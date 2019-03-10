@@ -3,6 +3,9 @@
     width: 1190px;
     margin: 0 auto;
 }
+img{
+    vertical-align: top;
+}
 .fl{
     float: left;
 }
@@ -354,9 +357,3 @@ header {
     background-position: 0 -155px;
 }
 
-
-
-.body{
-    height: 500px;
-    background-color:#999999;
-}
