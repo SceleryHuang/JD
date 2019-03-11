@@ -105,13 +105,51 @@
     height: 100%;
     background-color: cornflowerblue;
 }
-
+/*登录部分*/
 .login{
     height: 115px;
     border-bottom:1px solid #ccc;
-    background-color: purple;
+    background-color: #f6f6f6;
+    padding:15px;
+}
+.login-t{
+    width: 95px;
+    height: 55px;
+    font-size: 12px;
+    line-height: 20px;
+    /*显示省略号的三步*/
+    white-space: nowrap; /*强制一行显示*/
+    overflow: hidden; /*溢出部分隐藏*/
+    text-overflow:ellipsis;/*超出的部分显示省略号*/
+    color:#666;
+    padding-left:60px;
+    /*给padding 把文字挤过来*/
+    position: relative;
+}
+.login-t a{
+    color:#666;
 }
 
+.login-t a:hover{
+    color: #f10215;
+}
+
+.login-t-lk{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 5px solid #e3e1df;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 3px 6px 25px #c3c3c3;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.login-t-lk img{
+    width: 40px;
+    height: 40px;
+}
 .news{
     height: 154px;
     border-bottom:1px solid #ccc;
