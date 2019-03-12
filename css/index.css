@@ -107,7 +107,7 @@
 }
 /*登录部分*/
 .login{
-    height: 115px;
+    height: 85px;
     border-bottom:1px solid #ccc;
     background-color: #f6f6f6;
     padding:15px;
@@ -150,14 +150,146 @@
     width: 40px;
     height: 40px;
 }
+
+.login-b a{
+    display: inline-block;
+    width: 70px;
+    height: 20px;
+    line-height:20px;
+    border: 2px solid #f10215;
+    margin-right: 3px;
+    text-align: center;
+    color: #f10215;
+}
+
+.login-b a:hover{
+    background-color: #f10215;
+    color: #f6f6f6;
+}
+/*新闻部分*/
 .news{
     height: 154px;
     border-bottom:1px solid #ccc;
-    background-color: pink;
+    background-color: #f6f6f6;
+    padding: 7px 13px 0;
+    box-sizing: border-box;
+    /*不用减去padding了*/
 }
+.news-t{
+    height: 19px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+
+}
+.news-t div{
+    height: 2px;
+    width: 28px;
+    background-color:#f10215;
+    position: absolute;
+    left:0;
+    bottom: -1px;
+}
+
+.news-t a{
+    float: left;
+    height:17px;
+    line-height: 17px;
+}
+.cuxiao{
+    width: 38px;
+    border-right: 1px solid #ccc;
+
+}
+.gonggao{
+    margin-left: 15px;
+}
+.news-t .more{
+    float: right;
+}
+
+.news-b{
+    padding-top: 15px;
+
+}
+.news-b li{
+    height: 23px;
+    line-height: 23px;
+}
+
+/*扩展模块*/
 .expand{
     height: 209px;
     /*border-bottom:1px solid #ccc;*/
-    background-color: skyblue;
+    background-color: #f6f6f6;
+    overflow: hidden;
+    /*这个宽度继承了父亲的190，多出的1像素就隐藏了*/
 }
+.expand ul{
+    width: 195px;
+    /*父亲是190 但是里面的li太宽了，所以加宽，让ul宽度变大*/
+}
+.expand li{
+    width: 47px;
+    height: 69px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    float: left;
+}
+
+.expand li a{
+    display: block;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.expand li i{
+    display: block;
+    margin:0 auto;
+    margin-bottom: 10px;
+    background: url("../images/sprite.service.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    /*margin: 4px auto 0;*/
+}
+.expand li:first-child i{
+    background-position:-145px -42px;
+}
+.expand li:nth-child(2) i{
+    background-position:-29px -42px;
+}
+.expand li:nth-child(3) i{
+    background-position:-58px -42px;
+}
+.expand li:nth-child(4) i{
+    background-position:-87px -42px;
+}
+.expand li:nth-child(5) i{
+    background-position:-116px -42px;
+}
+.expand li:nth-child(6) i{
+    background-position:-116px -71px;
+}
+.expand li:nth-child(7) i{
+    background-position:-174px -42px;
+}
+.expand li:nth-child(8) i {
+    background-position:0 -71px;
+}
+.expand li:nth-child(9) i{
+    background-position:-29px -71px;
+}
+.expand li:nth-child(10) i{
+    background-position:-58px -71px;
+}
+.expand li:nth-child(11) i{
+    background-position:-87px -71px;
+}
+.expand li:nth-child(12) i{
+    background-position:0 -42px;
+}
+
+
+
+
+
 /*分类区第三栏结束*/
