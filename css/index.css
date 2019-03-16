@@ -11,6 +11,31 @@
     color:#ffffff;
     font-size: 14px;
     /*不是给字的，是给反斜杠的*/
+    position: relative;
+}
+
+.ad{
+    width: 250px;
+    height: 480px;
+    background-color: pink;
+    position: absolute;
+    left: -250px;
+    top: 0px;
+}
+.ad-r{
+    position: absolute;
+    top:0;
+    left: 250px;
+    z-index: 999;
+    width: 0;
+    height: 480px;
+    background: url("../images/ad-r.jpg");
+    /*这个图片加动画，给这个图片添加过度*/
+    transition: all 0.8s;
+}
+.ad:hover .ad-r{
+    width: 990px;
+    /*鼠标经过ad的大盒子的时候，宽度由0变为990*/
 }
 .grid-col1 a{
     color:#ffffff;
